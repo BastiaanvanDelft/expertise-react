@@ -9,10 +9,19 @@ const BookList = () => {
     ])
 
     return (
-        <section>
+        <section class="books">
+            <div className="Text">
+            <h1>De beste boekwinkel van Nederland</h1>
+            <h2>Gratis verzending boven 25 euro</h2>
+            <h3>Ontdek onze bestsellers</h3>
+            </div>
+            <div className="yes">
             {books.map((book) => (
-                <Book title={book.title} author={book.author} image={book.image}/>
+                <div>
+                    <Book title={book.title} author={book.author} image={book.image}/>
+                </div>
             ))}
+            </div>
 
         </section>
     );

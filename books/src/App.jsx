@@ -1,12 +1,17 @@
 import Book from "./components/Book";
 import BookList from "./components/BookList";
+import Header from "./components/Header"
+import Layout from "./components/Layout"
+import './App.css'
 function App() {
   
 
   return (
     <>
-    <h1>Amazon Bestsellers</h1>
+    <Layout>
+      <Header/>
       <BookList/>
+    </Layout>
     </>
   );
 }
